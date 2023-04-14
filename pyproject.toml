@@ -1,0 +1,25 @@
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "flake8>=5.0.4",
+    "hypothesis>=6.71.0",
+]
+
+[project]
+name = "pdmtest"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Philipp Jaschke", email = "philipp.jaschke@schulz.st"},
+]
+dependencies = [
+    "pydantic>=1.10.7",
+    "fastapi>=0.95.1",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
